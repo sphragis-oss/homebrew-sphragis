@@ -1,7 +1,8 @@
 # Homebrew Tap for Sphragis
 
-EU AI Act compliance gateway: a drop-in OpenAI/Anthropic proxy that redacts
-PII and secrets locally and writes a tamper-evident, hash-chained audit log.
+EU AI Act compliance gateway with first-class support for **Claude Code**: a
+drop-in OpenAI/Anthropic proxy that redacts PII and secrets locally and writes
+a tamper-evident, hash-chained audit log.
 
 ## Install (macOS)
 
