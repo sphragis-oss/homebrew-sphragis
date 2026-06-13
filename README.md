@@ -1,11 +1,17 @@
 # Homebrew Tap for Sphragis
 
-EU AI Act compliance gateway: a drop-in LLM proxy that redacts PII/secrets locally and writes a tamper-evident audit log.
+EU AI Act compliance gateway: a drop-in OpenAI/Anthropic proxy that redacts
+PII and secrets locally and writes a tamper-evident, hash-chained audit log.
 
-## Install
+## Install (macOS)
 
 ```sh
-brew install sphragis-oss/sphragis/sphragis
+brew install --cask sphragis-oss/sphragis/sphragis
 ```
 
-Formulae here are published automatically by GoReleaser on each release of [sphragis-oss/sphragis](https://github.com/sphragis-oss/sphragis).
+This tap ships a **Cask** (a prebuilt binary), so it is macOS-only. On Linux,
+use the install script or build from source. See the main project README:
+[sphragis-oss/sphragis](https://github.com/sphragis-oss/sphragis).
+
+The Cask here is published automatically by GoReleaser on each release of the
+main project.
