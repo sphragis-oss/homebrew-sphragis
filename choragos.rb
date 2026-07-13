@@ -5,13 +5,13 @@
 class Choragos < Formula
   desc "Secure multi-agent development orchestrator TUI"
   homepage "https://github.com/sphragis-oss/choragos"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sphragis-oss/choragos/releases/download/v0.5.0/choragos_darwin_amd64.tar.gz"
-      sha256 "be49ce1ffc6fc6aadc6bbbb8a4a064cf5b0ae782ed11f7db51253dd9295ebf93"
+      url "https://github.com/sphragis-oss/choragos/releases/download/v0.6.0/choragos_darwin_amd64.tar.gz"
+      sha256 "a7cbd73007ff3c8390277aff4aea2ffe1a6d1b3cf5186a667875dc060ae44281"
 
       define_method(:install) do
         bin.install "choragos"
@@ -22,8 +22,8 @@ class Choragos < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sphragis-oss/choragos/releases/download/v0.5.0/choragos_darwin_arm64.tar.gz"
-      sha256 "c427dd38ba17f8eecc991b03556ade8b00235ccabefaa0e5a28190c393b4e6a4"
+      url "https://github.com/sphragis-oss/choragos/releases/download/v0.6.0/choragos_darwin_arm64.tar.gz"
+      sha256 "76ba3436a8ce456603fd013bf493cb2ffd7e40551c4c203b015a8b2eb3555e68"
 
       define_method(:install) do
         bin.install "choragos"
@@ -37,8 +37,8 @@ class Choragos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sphragis-oss/choragos/releases/download/v0.5.0/choragos_linux_amd64.tar.gz"
-      sha256 "f492ba928563cd7d47931694e396d41bd8c6885e86c49af4b53beef6834c9d98"
+      url "https://github.com/sphragis-oss/choragos/releases/download/v0.6.0/choragos_linux_amd64.tar.gz"
+      sha256 "26b512832d371abd1430e1812179e2a7613db90f3239a80e76b25accc0b94896"
       define_method(:install) do
         bin.install "choragos"
         bash_completion.install "completions/choragos.bash" => "choragos"
@@ -48,8 +48,8 @@ class Choragos < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sphragis-oss/choragos/releases/download/v0.5.0/choragos_linux_arm64.tar.gz"
-      sha256 "cfbdafaa0170d8f8a0db3fe230b99a88253c41ea503ccdd388e930102f177c52"
+      url "https://github.com/sphragis-oss/choragos/releases/download/v0.6.0/choragos_linux_arm64.tar.gz"
+      sha256 "b5c8b670e1dc8e9012d4aee53f6147dfcf1b57756298c08153d504cdb3e1c590"
       define_method(:install) do
         bin.install "choragos"
         bash_completion.install "completions/choragos.bash" => "choragos"
