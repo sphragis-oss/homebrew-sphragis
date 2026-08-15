@@ -1,7 +1,7 @@
 # Bumped by the choragos desktop release workflow. DO NOT EDIT version/sha256 by hand.
 cask "choragos-desktop" do
-  version "0.16.0"
-  sha256 "f7079a341159a4912e8dd571bba9b4281a39b718faf7e5611e16c73eed5ccc69"
+  version "0.18.1"
+  sha256 "aed032880f3f7615e234a5f5d8143be87435ac2f1c6780ce686a88845baabbaf"
 
   url "https://github.com/sphragis-oss/choragos/releases/download/desktop/v#{version}/Choragos-#{version}.dmg"
   name "Choragos"
