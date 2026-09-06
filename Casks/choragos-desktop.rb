@@ -16,7 +16,7 @@ cask "choragos-desktop" do
 
   app "Choragos.app"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Choragos.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Choragos.app"]
   end
 end
